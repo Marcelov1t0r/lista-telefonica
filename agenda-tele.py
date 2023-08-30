@@ -12,7 +12,7 @@ while(sair==False):
     print("4 - Excluir contato\n")
     opcao=int(input("Digite a opção escolhida:"))
 
-    sleep(2)
+    #sleep(1)
 
     if(opcao==1): # Add contatos
         novo_contato=[]
@@ -22,3 +22,7 @@ while(sair==False):
         novo_contato.append(telefone)
         agenda.append(novo_contato)
         os.system('cls')
+
+    if(opcao==2):
+        for contato in agenda:
+            print("\nNome:",contato[0],"Telefone:",contato[1],"\n")
